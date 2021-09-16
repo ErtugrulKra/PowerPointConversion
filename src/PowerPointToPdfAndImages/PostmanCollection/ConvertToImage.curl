@@ -1,0 +1,3 @@
+﻿curl --location --request POST 'https://localhost:49186/PowerPointConversion/ConvertToImage' \
+--header 'accept: */*' \
+--form '=@"/samplepptx.pptx"'

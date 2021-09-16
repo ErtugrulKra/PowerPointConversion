@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "ef324cb7-bdef-47a2-a11d-7face2ab5ba3",
+		"name": "PowerPointToPdfAndImages",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ConvertToPDF",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"type": "file",
+							"src": "/C:/Users/ertugrul.kara/Downloads/samplepptx.pptx"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:49186/PowerPointConversion/ConvertToPDF",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "49186",
+					"path": [
+						"PowerPointConversion",
+						"ConvertToPDF"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConvertToPImage",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"type": "file",
+							"src": "/C:/Users/ertugrul.kara/Downloads/samplepptx.pptx"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:49186/PowerPointConversion/ConvertToImage",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "49186",
+					"path": [
+						"PowerPointConversion",
+						"ConvertToImage"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
